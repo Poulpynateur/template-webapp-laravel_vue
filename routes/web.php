@@ -11,6 +11,9 @@
 |
 */
 
+/**
+ * Should probably make a controller ¯\_(ツ)_/¯
+ */
 Route::get('/', function () {
     return view('welcome');
 });

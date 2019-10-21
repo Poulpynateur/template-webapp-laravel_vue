@@ -31724,10 +31724,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/sass/root/app.scss":
-/*!**************************************!*\
-  !*** ./resources/sass/root/app.scss ***!
-  \**************************************/
+/***/ "./resources/sass/app.scss":
+/*!*********************************!*\
+  !*** ./resources/sass/app.scss ***!
+  \*********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -31736,14 +31736,14 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 0:
-/*!***********************************************************************!*\
-  !*** multi ./resources/js/root/app.js ./resources/sass/root/app.scss ***!
-  \***********************************************************************/
+/*!******************************************************************!*\
+  !*** multi ./resources/js/root/app.js ./resources/sass/app.scss ***!
+  \******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! D:\Perso\Informatique\ServerVPS\sites\Test app\WebApp-Laravel-vue-base\resources\js\root\app.js */"./resources/js/root/app.js");
-module.exports = __webpack_require__(/*! D:\Perso\Informatique\ServerVPS\sites\Test app\WebApp-Laravel-vue-base\resources\sass\root\app.scss */"./resources/sass/root/app.scss");
+module.exports = __webpack_require__(/*! D:\Perso\Informatique\ServerVPS\sites\Test app\WebApp-Laravel-vue-base\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

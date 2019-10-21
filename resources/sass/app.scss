@@ -1,5 +1,14 @@
 // Define variables to override default ones
 
+.full-screen {
+    width: 100vw;
+    height: 100vh;
+}
+.flex-vcenter {
+    align-items: center;
+    justify-content: center;
+}
+
 // Import full Spectre source code
 @import "node_modules/spectre.css/src/spectre";
 @import "node_modules/spectre.css/src/spectre-exp";
