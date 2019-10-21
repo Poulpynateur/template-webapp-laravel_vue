@@ -6,7 +6,7 @@
 
   <title>Home</title>
   
-  <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+  <link rel="stylesheet" href="{{ asset('root/css/app.css') }}">
 </head>
 
 <body>
@@ -17,6 +17,6 @@
       </main>
   </div>
 
-  <script src="{{ asset('js/app.js') }}"></script>
+  <script src="{{ asset('base/js/app.js') }}"></script>
 </body>
 </html>
