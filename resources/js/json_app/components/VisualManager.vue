@@ -1,25 +1,21 @@
 <template>
-    <div class="container">
 
-        <span v-if="isDeadEnd(data)">{{ data }}</span>
+        <span v-if="isDeadEnd(data)" class="d-inline-block">{{ data }}</span>
         <visual-array v-else-if="Array.isArray(data)" v-bind:items="data"></visual-array>
         <visual-object v-else v-bind:items="data"></visual-object>
 
-    </div>
+
 </template>
 
 
 <script>
 
-import VisualArray from "./VisualArray";
-import VisualObject from "./VisualObject";
-
 export default {
     name: "VisualManager",
     props: ['data'],
     components: {
-        VisualArray,
-        VisualObject
+        VisualArray: () => import('./VisualArray.vue'),
+        VisualObject: () => import('./VisualObject.vue')
     },
     methods: {
         isDeadEnd(data) {
