@@ -4,19 +4,18 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Home</title>
+  <title>{{ $name }}</title>
   
   <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 
 <body>
-
-  <div id="app">
-      <main>
-          @yield('content')
-      </main>
+  <!-- Yeah, I heavily use generic CSS class and happily mix structure and design. Well, I am not a designer ¯\_(ツ)_/¯ -->
+  <div id="app" class="container">
+    @yield('content')
   </div>
 
-  <script src="{{ asset('root/js/app.js') }}"></script>
+  <script src="{{ asset($path.'/js/app.js') }}"></script>
+
 </body>
 </html>

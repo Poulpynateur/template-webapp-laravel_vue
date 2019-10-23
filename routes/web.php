@@ -15,5 +15,7 @@
  * Should probably make a controller ¯\_(ツ)_/¯
  */
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome', ['name' => 'Welcome', 'path' => '']);
 });
+
+Route::get('/json', 'json\HomeController@show');

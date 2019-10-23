@@ -17,4 +17,7 @@ const mix = require('laravel-mix');
  * http://www.compulsivecoders.com/tech/how-to-build-multiple-vendors-using-laravel-mix/
  */
 
-mix.js('resources/js/root/app.js', 'public/root/js').sass('resources/sass/app.scss', 'public/css');
+// For now everyone share the same CSS
+mix.sass('resources/sass/app.scss', 'public/css');
+
+mix.js('resources/js/json_app/app.js', 'public/json_app/js');

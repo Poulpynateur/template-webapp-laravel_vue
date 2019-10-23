@@ -1,12 +1,16 @@
 // Define variables to override default ones
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700&display=swap');
 
+.title-font {
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+}
 .full-screen {
     width: 100vw;
     height: 100vh;
 }
 .flex-vcenter {
     align-items: center;
-    justify-content: center;
 }
 
 // Import full Spectre source code
