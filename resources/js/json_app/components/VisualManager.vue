@@ -1,9 +1,8 @@
 <template>
 
-        <span v-if="isDeadEnd(data)" class="d-inline-block">{{ data }}</span>
-        <visual-array v-else-if="Array.isArray(data)" v-bind:items="data"></visual-array>
-        <visual-object v-else v-bind:items="data"></visual-object>
-
+    <span v-if="isDeadEnd(data)" class="d-inline-block">{{ data }}</span>
+    <visual-array v-else-if="Array.isArray(data)" v-bind:items="data"></visual-array>
+    <visual-object v-else v-bind:items="data"></visual-object>
 
 </template>
 

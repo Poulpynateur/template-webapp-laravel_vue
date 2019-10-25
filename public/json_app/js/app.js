@@ -2051,7 +2051,6 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "VisualManager",
   props: ['data'],

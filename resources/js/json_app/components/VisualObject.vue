@@ -1,17 +1,18 @@
 <template>
-    <div>
-        <ul>
-            <li v-for="(item, key) in items"
-            v-bind:key="key">
-
-                <span class="h3">{{ key }}</span>
+    <div class="timeline">
+        <div class="timeline-item"
+        v-for="(item, key) in items"
+        v-bind:key="key">
+            <div class="timeline-left">
+                <a class="timeline-icon tooltip" :data-tooltip="key"></a>
+            </div>
+            <div class="timeline-content">
+                <h4>{{ key }}</h4>
                 <visual-manager v-bind:data="item"></visual-manager>
-
-            </li>
-        </ul>
+            </div>
+        </div>
     </div>
 </template>
-
 
 <script>
 
