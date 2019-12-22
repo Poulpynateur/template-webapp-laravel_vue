@@ -22,10 +22,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "VisualObject",
@@ -54,27 +50,17 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "timeline" },
     _vm._l(_vm.items, function(item, key) {
-      return _c("div", { key: key, staticClass: "timeline-item" }, [
-        _c("div", { staticClass: "timeline-left" }, [
-          _c("a", {
-            staticClass: "timeline-icon tooltip",
-            attrs: { "data-tooltip": key }
-          })
-        ]),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "timeline-content" },
-          [
-            _c("h4", [_vm._v(_vm._s(key))]),
-            _vm._v(" "),
-            _c("visual-manager", { attrs: { data: item } })
-          ],
-          1
-        )
-      ])
+      return _c(
+        "div",
+        { key: key, staticClass: "d-flex" },
+        [
+          _c("div", { staticClass: "vertical-line bg-dark" }),
+          _vm._v(" "),
+          _c("visual-manager", { attrs: { data: item } })
+        ],
+        1
+      )
     }),
     0
   )

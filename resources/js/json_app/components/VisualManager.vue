@@ -1,20 +1,24 @@
 <template>
 
-    <span v-if="isDeadEnd(data)" class="d-inline-block">{{ data }}</span>
-    <visual-array v-else-if="Array.isArray(data)" v-bind:items="data"></visual-array>
-    <visual-object v-else v-bind:items="data"></visual-object>
+<div>
+    
+    <end-point v-if="isDeadEnd(data)" :content="data"></end-point>
+    <json-visual v-else v-bind:items="data" :isObject="!Array.isArray(data)"></json-visual>
 
+</div>
 </template>
 
 
 <script>
 
+import EndPoint from "./EndPoint.vue";
+
 export default {
     name: "VisualManager",
     props: ['data'],
     components: {
-        VisualArray: () => import('./VisualArray.vue'),
-        VisualObject: () => import('./VisualObject.vue')
+        EndPoint,
+        JsonVisual: () => import('./JsonVisual.vue')
     },
     methods: {
         isDeadEnd(data) {

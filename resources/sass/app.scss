@@ -13,6 +13,25 @@
     align-items: center;
 }
 
+//Project custom shit
+.visual {
+    display: block;
+    margin: 5px;
+}
+
+.dead-end-point.visual {
+    border-radius: 50%;
+    width:10px;
+    height:10px;
+}
+
+.vertical-line.visual {
+    width: 5px;
+}
+.object .vertical-line {
+    border-radius: 5px;
+}
+
 // Import full Spectre source code
 @import "node_modules/spectre.css/src/spectre";
 @import "node_modules/spectre.css/src/spectre-exp";

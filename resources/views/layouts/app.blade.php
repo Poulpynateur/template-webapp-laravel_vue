@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <!-- Yeah, I heavily use generic CSS class and happily mix structure and design. Well, I am not a designer ¯\_(ツ)_/¯ -->
+  <!-- Yeah, I heavily use generic CSS classes and happily mix structure and design. Well, I am not a designer ¯\_(ツ)_/¯ -->
   <div id="app" class="container">
     @yield('content')
   </div>

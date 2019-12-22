@@ -11,9 +11,13 @@
 |
 */
 
+// TODO : add a system that link VueJS app to the good URL (hard coded ?), like foreach folder in ressources/sub
 /**
- * Should probably make a controller ¯\_(ツ)_/¯
+ * Also for the Blade view :
+ * - Link to the general style and JavaScript files         -> "ressource/global"
+ * - A dynamic path to the specific style and javascript    -> "ressource/sub/x"
  */
+
 Route::get('/', function () {
     return view('welcome', ['name' => 'Welcome', 'path' => '']);
 });

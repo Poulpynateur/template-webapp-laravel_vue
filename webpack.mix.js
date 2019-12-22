@@ -11,10 +11,12 @@ const mix = require('laravel-mix');
  |
  */
 
+ // TODO :
 /**
- * // TODO //
  * How to split dependencies with webpack :
  * http://www.compulsivecoders.com/tech/how-to-build-multiple-vendors-using-laravel-mix/
+ * 
+ * Also use the same logic than in web.php to dynamicly link "ressource" to "public"
  */
 
 // For now everyone share the same CSS
