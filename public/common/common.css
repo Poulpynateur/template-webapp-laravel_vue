@@ -1,36 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:700&display=swap);@charset "UTF-8";
 
-.title-font {
-  text-transform: uppercase;
-  font-family: "Roboto Condensed", sans-serif;
+#main-menu {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
-.full-screen {
-  width: 100vw;
-  height: 100vh;
-}
-
-.flex-vcenter {
-  align-items: center;
-}
-
-.visual {
-  display: block;
-  margin: 5px;
-}
-
-.dead-end-point.visual {
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-}
-
-.vertical-line.visual {
-  width: 5px;
-}
-
-.object .vertical-line {
-  border-radius: 5px;
+#main-menu .menu {
+  min-width: auto;
 }
 
 /*! Spectre.css v0.5.8 | MIT License | github.com/picturepan2/spectre */

@@ -1,25 +1,30 @@
 const mix = require('laravel-mix');
 
-/*
- |--------------------------------------------------------------------------
- | Mix Asset Management
- |--------------------------------------------------------------------------
- |
- | Mix provides a clean, fluent API for defining some Webpack build steps
- | for your Laravel application. By default, we are compiling the Sass
- | file for the application as well as bundling up all the JS files.
- |
- */
+// TODO ! follow a real tutorial on webpack and how to split dependencies
 
- // TODO :
 /**
- * How to split dependencies with webpack :
- * http://www.compulsivecoders.com/tech/how-to-build-multiple-vendors-using-laravel-mix/
+ * Each app JS and custom SASS is added there
  * 
- * Also use the same logic than in web.php to dynamicly link "ressource" to "public"
+ * Indicate the name of the folder of app (must corespond to folder in ressources/apps)
+ * Maybe in the futur I will iterate automaticly in the ressources/apps folder
  */
 
-// For now everyone share the same CSS
-mix.sass('resources/sass/app.scss', 'public/css');
+const addApp = (folder) => {
+    mix.js('resources/apps/'+folder+'/js/app.js', 'public/'+folder+'Assets');
+    mix.sass('resources/apps/'+folder+'/sass/app.scss', 'public/'+folder+'Assets');
+}
 
-mix.js('resources/js/json_app/app.js', 'public/json_app/js');
+addApp('Json');
+addApp('Home');
+
+/**
+ * Common ressources
+ * 
+ * Split dependencies with wepbpack : http://www.compulsivecoders.com/tech/how-to-build-multiple-vendors-using-laravel-mix/
+ */
+
+mix.js('resources/common/js/common.js', 'public/common');
+mix.sass('resources/common/sass/common.scss', 'public/common');
+
+// Extract is used to split vendors (need to be at the end to be in common folder)
+mix.extract();

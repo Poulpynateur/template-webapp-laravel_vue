@@ -11,15 +11,25 @@
 |
 */
 
-// TODO : add a system that link VueJS app to the good URL (hard coded ?), like foreach folder in ressources/sub
 /**
- * Also for the Blade view :
- * - Link to the general style and JavaScript files         -> "ressource/global"
- * - A dynamic path to the specific style and javascript    -> "ressource/sub/x"
+ * Route to each apps
+ * 
+ * The name must corespond to folder in ressources/apps
  */
-
 Route::get('/', function () {
-    return view('welcome', ['name' => 'Welcome', 'path' => '']);
+    return view('app', ['name' => 'Home']);
+})->name('home');
+
+Route::get('/about', function () {
+    return view('app', ['name' => 'Json']);
+})->name('about');
+
+Route::get('/login', function () {
+    return view('app', ['name' => 'Json']);
+})->name('login');
+
+Route::get('/json', function () {
+    return view('app', ['name' => 'Json']);
 });
 
-Route::get('/json', 'json\HomeController@show');
+
