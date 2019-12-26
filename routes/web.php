@@ -12,24 +12,28 @@
 */
 
 /**
- * Route to each apps
+ * Auth routes
+ * 
+ * I may need to make then myself
+ */
+
+Route::get('/login', function () {
+    return view('app', ['name' => 'Json']);
+})->name('login');
+
+/**
+ * Apps routes
  * 
  * The name must corespond to folder in ressources/apps
  */
 Route::get('/', function () {
-    return view('app', ['name' => 'Home']);
+    return view('app', ['name' => 'Me']);
 })->name('home');
 
 Route::get('/about', function () {
     return view('app', ['name' => 'Json']);
 })->name('about');
 
-Route::get('/login', function () {
-    return view('app', ['name' => 'Json']);
-})->name('login');
-
 Route::get('/json', function () {
     return view('app', ['name' => 'Json']);
 });
-
-
