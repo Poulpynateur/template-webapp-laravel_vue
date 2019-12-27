@@ -27,7 +27,7 @@ Route::get('/login', function () {
  * The name must corespond to folder in ressources/apps
  */
 Route::get('/', function () {
-    return view('app', ['name' => 'Me']);
+    return view('app', ['name' => 'Portfolio']);
 })->name('home');
 
 Route::get('/about', function () {

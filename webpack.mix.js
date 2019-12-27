@@ -15,7 +15,7 @@ const addApp = (folder) => {
 }
 
 addApp('Json');
-addApp('Me');
+addApp('Portfolio');
 
 /**
  * Common ressources
