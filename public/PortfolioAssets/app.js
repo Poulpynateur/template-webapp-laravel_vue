@@ -71,7 +71,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "H2Title"
 });
@@ -87,6 +86,17 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -138,7 +148,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n.ornament[data-v-59ae990f] {\r\n  font-size: 3em;\r\n  font-weight: bold;\n}\n.foreground[data-v-59ae990f] {\r\n  font-size: 4em;\r\n  \r\n  display: inline;\r\n  margin: 0;\n}\n.background[data-v-59ae990f] {\r\n  font-size: 4.2em;\r\n  font-weight: bold;\r\n  display: inline;\r\n  margin: 0;\n}\r\n", ""]);
+exports.push([module.i, "\n.ornament[data-v-59ae990f] {\r\n  font-size: 3.5em;\r\n  font-weight: bold;\n}\n.foreground[data-v-59ae990f] {\r\n  font-size: 4em;\r\n  display: inline;\r\n  margin: 0;\n}\n.background[data-v-59ae990f] {\r\n  font-size: 4.3em;\r\n  font-weight: bold;\r\n  display: inline;\r\n  margin: 0;\n}\r\n", ""]);
 
 // exports
 
@@ -157,7 +167,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n#welcome[data-v-19c08072] {\r\n  min-height: 100vh;\r\n  min-width: 100vw;\n}\n.welcome-background[data-v-19c08072] {\r\n  -webkit-user-select: none;\r\n     -moz-user-select: none;\r\n      -ms-user-select: none;\r\n          user-select: none;\r\n  line-height: 0.8;\r\n  font-size: 40vw;\r\n  margin: 0;\r\n  font-weight: bold;\n}\n.welcome-title[data-v-19c08072] {\r\n  line-height: 0.9;\r\n  margin: 0;\r\n  font-size: 12vw;\n}\r\n", ""]);
+exports.push([module.i, "\n#more_info[data-v-19c08072] {\r\n  position: absolute;\r\n  bottom: 0;\r\n  left: 50%;\r\n  transform: translateX(-50%);\n}\n#welcome[data-v-19c08072] {\r\n  position: relative;\r\n  min-height: 100vh;\r\n  min-width: 100vw;\n}\n.welcome-background[data-v-19c08072] {\r\n  -webkit-user-select: none;\r\n     -moz-user-select: none;\r\n      -ms-user-select: none;\r\n          user-select: none;\r\n  line-height: 0.8;\r\n  font-size: 40vw;\r\n  margin: 0;\r\n  font-weight: bold;\n}\n.welcome-title[data-v-19c08072] {\r\n  line-height: 0.9;\r\n  margin: 0;\r\n  font-size: 12vw;\n}\r\n", ""]);
 
 // exports
 
@@ -318,7 +328,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "title-wrapper", attrs: { id: "welcome" } },
+      { staticClass: "bg-dark title-wrapper", attrs: { id: "welcome" } },
       [
         _c("div", { staticClass: "title" }, [
           _c("h1", { staticClass: "welcome-background text-secondary" }, [
@@ -330,6 +340,10 @@ var staticRenderFns = [
           _c("h1", { staticClass: "welcome-title" }, [_vm._v("Nicolas")]),
           _vm._v(" "),
           _c("h1", { staticClass: "welcome-title" }, [_vm._v("DE GHESELLE")])
+        ]),
+        _vm._v(" "),
+        _c("div", { attrs: { id: "more_info" } }, [
+          _c("i", { staticClass: "icon icon-arrow-down" })
         ])
       ]
     )

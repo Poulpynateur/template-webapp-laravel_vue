@@ -14,17 +14,16 @@
 
 <style scoped>
 .ornament {
-  font-size: 3em;
+  font-size: 3.5em;
   font-weight: bold;
 }
 .foreground {
   font-size: 4em;
-  
   display: inline;
   margin: 0;
 }
 .background {
-  font-size: 4.2em;
+  font-size: 4.3em;
   font-weight: bold;
   display: inline;
   margin: 0;
