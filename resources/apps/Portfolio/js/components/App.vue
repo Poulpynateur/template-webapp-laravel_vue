@@ -1,21 +1,19 @@
 <template>
-  <div>
+  <div class="bg-dark text-dark">
     <intro></intro>
+    <skills></skills>
   </div>
 </template>
 
 <script>
 import Intro from './Intro';
-
-import SectionTitle from './SectionTitle';
-import Card from './Card';
+import Skills from './Skills';
 
 export default {
   name: "App",
   components: {
     Intro,
-    SectionTitle,
-    Card
+    Skills
   }
 };
 </script>

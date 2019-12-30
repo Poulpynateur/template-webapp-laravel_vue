@@ -2,6 +2,10 @@
   margin: 0 !important;
 }
 
+.bg-white {
+  background-color: #fff;
+}
+
 .grid {
   color: #303742;
   background: #303742;
@@ -10,6 +14,7 @@
 }
 
 .grid .column {
+  flex: none;
   padding-left: 0;
   padding-right: 0;
   width: 50%;

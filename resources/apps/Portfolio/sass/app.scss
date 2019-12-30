@@ -4,6 +4,10 @@
     margin: 0 !important;
 }
 
+.bg-white {
+    background-color: $light-color;
+}
+
 .grid {
   color: $dark-color;
   background: $dark-color;
@@ -11,6 +15,7 @@
   flex-flow: row wrap;
 
   .column {
+    flex:none;
     padding-left: 0;
     padding-right: 0;
     width: 50%;
