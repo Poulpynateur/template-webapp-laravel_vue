@@ -1,10 +1,10 @@
 {
     "/JsonAssets/app.js": "/JsonAssets/app.js",
     "/JsonAssets/app.css": "/JsonAssets/app.css",
+    "/PortfolioAssets/app.css": "/PortfolioAssets/app.css",
     "/common/common.css": "/common/common.css",
     "/PortfolioAssets/app.js": "/PortfolioAssets/app.js",
     "/common/common.js": "/common/common.js",
     "/common/manifest.js": "/common/manifest.js",
-    "/common/vendor.js": "/common/vendor.js",
-    "/PortfolioAssets/app.css": "/PortfolioAssets/app.css"
+    "/common/vendor.js": "/common/vendor.js"
 }

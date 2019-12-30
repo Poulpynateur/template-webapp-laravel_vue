@@ -1,20 +1,21 @@
 <template>
-  <div class="container">
-    <welcome-page></welcome-page>
-    <h2-title>Test of a test</h2-title>
+  <div>
+    <intro></intro>
   </div>
 </template>
 
 <script>
+import Intro from './Intro';
 
-import WelcomePage from './WelcomePage';
-import H2Title from './H2Title'
+import SectionTitle from './SectionTitle';
+import Card from './Card';
 
 export default {
   name: "App",
   components: {
-    WelcomePage,
-    H2Title
+    Intro,
+    SectionTitle,
+    Card
   }
 };
 </script>

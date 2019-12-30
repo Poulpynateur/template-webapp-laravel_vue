@@ -1,9 +1,35 @@
 @import "../../../common/sass/variables.scss";
 
-.title-wrapper {
-    position: relative;
+.m-0 {
+    margin: 0 !important;
 }
-.title {
-    font-family: 'Dosis', sans-serif;
-    position: absolute;
+
+.grid {
+  color: $dark-color;
+  background: $dark-color;
+  display: flex;
+  flex-flow: row wrap;
+
+  .column {
+    padding-left: 0;
+    padding-right: 0;
+    width: 50%;
+  }
+}
+
+.card-container {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+}
+.card-body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.content-center {
+  top: 50%;
+  transform: translateY(-50%);
 }
