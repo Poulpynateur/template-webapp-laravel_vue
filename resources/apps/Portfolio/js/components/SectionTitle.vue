@@ -19,6 +19,7 @@
   border: 0;
 }
 .wrapper {
+  width: 100%;
   margin: 3em 0 2em 0;
   align-items: center;
 }

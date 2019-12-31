@@ -1,35 +1,19 @@
 <template>
-  <section class="container grid-md">
-    <article class="columns content">
-      <div class="description">
-        <!-- Show personnal statement on hover -->
-      </div>
-      <div class="title">
-        <h1>Nicolas</h1>
-        <h1>DE GHESELLE</h1>
-      </div>
-    </article>   
-  </section>
+  <div>
+    <h1>Nicolas DE GHESELLE</h1>
+    <article class="statement">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </article>
+  </div>
 </template>
 
 <style lang="scss" scoped>
 @import "../../../../common/sass/variables.scss";
-.container {
-  padding : 100px 0;
+
+.statement {
+  text-align: justify;
 }
 
-.content {
-  background: $gray-color-light;
-  padding: 100px; 
-  position: relative;
-
-  .title h1 {
-    font-size: 80px;
-    line-height: 0.9em;
-    margin: 0;
-  }
-
-}
 </style>
 
 <script>

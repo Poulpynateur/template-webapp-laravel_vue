@@ -1,29 +1,42 @@
 <template>
-  <div class="element-wrapper" v-bind:class="{'bg-gray' : background}">
-    <div class="name">
-      <h3>{{ name }}</h3>
-    </div>
-    <slot></slot>
-  </div>
+  <article class="content">
+      <h3 class="name">{{ name }}</h3>
+      <div>
+          <slot></slot>
+      </div>
+  </article>
 </template>
 
-<style scoped>
-.name {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+<style lang="scss" scoped>
+@import "../../../../common/sass/variables.scss";
+
+.content {
+
   width: 100%;
-  text-align: center;
-}
-.element-wrapper {
+  padding-top: 100%;
+
   position: relative;
-  min-height: 300px;
+  background: $gray-color-medium;
+
+  .name {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
 }
+
+.content.col-1-2 {
+  padding-top: 50%;
+}
+
 </style>
+
 
 <script>
 export default {
   name: "Card",
-  props: ['background', 'name']
+  props: ['name']
 };
 </script>

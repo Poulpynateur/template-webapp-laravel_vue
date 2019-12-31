@@ -1,37 +1,20 @@
 <template>
-  <section class="grid">
-    <div class="column">
-      <article class="card-container bg-white">
-        <div class="card-body content-center">
-          <h2>Skills</h2>
+  <section class="skills columns col-gapless">
+    <div class="column col-6 col-lg-12">
+      <div class="columns col-gapless">
+        <div class="column col-6">
+          <card name="Network"></card>
         </div>
-      </article>
-    </div>
-    <div class="column">
-      <div class="grid">
-        <div class="column">
-          <div class="card-container bg-dark">
-          </div>
+        <div class="column col-6">
+          <card name="Algorithmy"></card>
         </div>
-        <div class="column">
-          <div class="card-container bg-dark">
-          </div>
-        </div>
-        <div class="column">
-          <article class="card-container bg-white">
-            <div class="card-body">
-              <h2>Network</h2>
-            </div>
-          </article>
-        </div>
-        <div class="column">
-          <article class="card-container bg-white">
-            <div class="card-body">
-              <h2>Algorithmy</h2>
-            </div>
-          </article>
+        <div class="column col-12 col-lg-12">
+          <card name="Software" class="col-1-2"></card>
         </div>
       </div>
+    </div>
+    <div class="column col-6 col-lg-12">
+      <card name="Web"></card>
     </div>
   </section>
 </template>
@@ -39,18 +22,21 @@
 <style lang="scss" scoped>
 @import "../../../../common/sass/variables.scss";
 
-.main-statement {
-  background: $gray-color-light;
-
-  p {
-    padding: 30px;
-    font-size: 30px;
-  }
+.skills {
+  width:100%;
 }
+
+
 </style>
 
 <script>
+
+import Card from "./Card";
+
 export default {
-  name: "Skills"
+  name: "Skills",
+  components: {
+    Card
+  }
 };
 </script>

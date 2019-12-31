@@ -12,6 +12,7 @@ $dark-color: #303742;
 $light-color: #fff;
 $gray-color: lighten($dark-color, 55%);
 $gray-color-dark: darken($gray-color, 30%);
+$gray-color-medium: lighten($gray-color, 10%);
 $gray-color-light: lighten($gray-color, 20%);
 
 $border-color: lighten($dark-color, 65%);
