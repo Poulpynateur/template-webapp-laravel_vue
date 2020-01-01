@@ -6,3 +6,21 @@
   background-color: #fff;
 }
 
+.c-grid,
+.skills,
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.c-column {
+  width: 50%;
+}
+
+@media (max-width: 960px) {
+  .c-column {
+    width: 100%;
+  }
+}
+

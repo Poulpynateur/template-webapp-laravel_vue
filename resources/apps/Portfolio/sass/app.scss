@@ -7,3 +7,17 @@
 .bg-white {
     background-color: $light-color;
 }
+
+.c-grid, .skills, .projects {
+	display: flex;
+    flex-wrap: wrap;
+    width:100%;
+}
+
+.c-column {
+    width: 50%;
+
+    @media (max-width: $size-lg) {
+        width: 100%;
+    }
+}
