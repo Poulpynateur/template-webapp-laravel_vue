@@ -14,13 +14,11 @@
 <style scoped>
 .separator {
   float: right;
-  width: 100px;
-  height: 4px;
-  border: 0;
 }
+
 .wrapper {
   width: 100%;
-  margin: 3em 0 2em 0;
+  padding: 5em 0 2em 5px;
   align-items: center;
 }
 .title {

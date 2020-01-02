@@ -8,16 +8,25 @@
     background-color: $light-color;
 }
 
-.c-grid, .skills, .projects {
+.separator {
+    width: 100px;
+    height: 4px;
+    border: 0;
+    margin: 0;
+}
+
+.c-grid, .skills, .projects, .spacer {
 	display: flex;
     flex-wrap: wrap;
     width:100%;
 }
-
 .c-column {
     width: 50%;
 
     @media (max-width: $size-lg) {
         width: 100%;
     }
+}
+.c-column-full {
+    width: 100%;
 }

@@ -1,26 +1,14 @@
 <template>
   <section class="projects">
     <div class="c-column">
-      <div>
-        <card name="Concrete stuff" isTitle="yes" widthRatio="2"></card>
-      </div>
-      <div>
-        <card name="Projet 1"></card>
-      </div>
-      <div>
-        <card name="Projet 2"></card>
-      </div>
+      <card name="Concrete stuff" isTitle="yes" widthRatio="2"></card>
+      <card name="Projet 1"></card>
+      <card name="Projet 2"></card>
     </div>
     <div class="c-column">
-      <div>
-        <card name="Projet 3"></card>
-      </div>
-      <div>
-        <card name="Projet 4"></card>
-      </div>
-      <div>
-        <card name="More on github" isTitle="yes" widthRatio="2"></card>
-      </div>
+      <card name="Projet 3"></card>
+      <card name="Projet 4"></card>
+      <card name="More on github" isTitle="yes" widthRatio="2"></card>
     </div>
   </section>
 </template>
@@ -34,7 +22,7 @@
 import Card from "./Card";
 
 export default {
-  name: "Skills",
+  name: "Projects",
   components: {
     Card
   }

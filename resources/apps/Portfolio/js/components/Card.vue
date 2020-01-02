@@ -1,12 +1,14 @@
 <template>
-<div class="container" v-bind:class="{'col-1-1': !widthRatio, 'col-1-2': (widthRatio==2), 'col-1-4': (widthRatio==4)}">
-  <div class="content" >
-    <article v-bind:class="{'bg-title': isTitle}">
-      <h3 class="name">{{ name }}</h3>
-      <div>
-          <slot></slot>
-      </div>
-    </article>
+<div>
+  <div class="container" v-bind:class="{'col-1-1': !widthRatio, 'col-1-2': (widthRatio==2), 'col-1-4': (widthRatio==4)}">
+    <div class="content">
+      <article v-bind:class="{'bg-title': isTitle}">
+        <h3 class="name">{{ name }}</h3>
+        <div>
+            <slot></slot>
+        </div>
+      </article>
+    </div>
   </div>
 </div>
 </template>
